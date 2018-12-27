@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 
 public class Appstorage  {
+    //xxxx 修改时间：2018-12-27-17：11
 
     public static PreferencesStorageModule myModule=null;
     public static void initModel(Context context){
