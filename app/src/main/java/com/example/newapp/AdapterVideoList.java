@@ -21,6 +21,8 @@ public class AdapterVideoList extends BaseAdapter {
 
     public static final String TAG = "JZVD";
 
+    //qqqqqqqq
+
     Context context;
 
     String[] videoUrls;
