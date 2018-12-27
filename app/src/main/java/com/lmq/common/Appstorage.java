@@ -12,6 +12,9 @@ import java.util.ArrayList;
  * Created by Administrator on 2018/12/25 0025.
  */
 
+
+//test modify the same file.
+
 public class Appstorage  {
 
     public static PreferencesStorageModule myModule=null;
