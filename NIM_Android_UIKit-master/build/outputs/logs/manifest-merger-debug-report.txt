@@ -1,0 +1,303 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+	package
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:2:5-36
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:1-158:12
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:5:22-76
+application
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:6:5-157:19
+meta-data#com.netease.nim.uikit.support.glide.NIMGlideModule
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:8:9-10:42
+	android:value
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:10:13-40
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:9:13-78
+activity#com.netease.nim.uikit.business.session.activity.P2PMessageActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:15:9-20:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:18:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:20:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:17:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:19:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:16:13-94
+activity#com.netease.nim.uikit.business.session.activity.TeamMessageActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:21:9-26:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:24:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:26:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:23:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:22:13-95
+activity#com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:29:9-34:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:32:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:34:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:31:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:33:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:30:13-95
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:35:9-40:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:38:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:40:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:37:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:39:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:36:13-97
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:41:9-46:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:44:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:46:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:43:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:45:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:42:13-99
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:47:9-52:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:50:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:52:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:49:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:48:13-101
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:53:9-58:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:56:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:58:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:55:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:54:13-103
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:59:9-64:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:62:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:64:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:61:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:63:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:60:13-101
+activity#com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:65:9-70:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:68:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:70:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:67:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:69:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:66:13-107
+activity#com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:71:9-76:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:74:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:76:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:73:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:75:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:72:13-100
+activity#com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:79:9-85:67
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:83:13-49
+	android:label
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:82:13-53
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:85:13-64
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:81:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:84:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:80:13-106
+activity#com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:88:9-90:64
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:89:19-55
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:90:19-62
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:88:19-83
+activity#com.netease.nim.uikit.common.media.picker.activity.PickImageActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:93:9-96:59
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:95:13-49
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:96:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:94:13-96
+activity#com.netease.nim.uikit.common.media.picker.activity.CropImageActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:97:9-100:58
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:99:13-49
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:100:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:98:13-96
+activity#com.netease.nim.uikit.common.media.picker.activity.PickerAlbumActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:101:9-104:59
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:103:13-49
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:104:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:102:13-98
+activity#com.netease.nim.uikit.common.media.picker.activity.PickerAlbumPreviewActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:105:9-108:59
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:107:13-49
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:108:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:106:13-105
+activity#com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromLocalActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:109:9-114:58
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:112:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:113:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:111:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:114:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:110:13-108
+activity#com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromCameraActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:115:9-121:70
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:119:13-49
+	android:label
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:118:13-53
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:121:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:117:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:120:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:116:13-109
+activity#com.netease.nim.uikit.business.session.activity.CaptureVideoActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:124:9-129:58
+	android:screenOrientation
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:127:13-49
+	android:windowSoftInputMode
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:128:13-67
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:126:13-63
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:129:13-56
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:125:13-96
+activity#com.netease.nim.uikit.business.session.activity.WatchVideoActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:131:9-135:48
+	android:label
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:134:13-47
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:133:13-74
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:135:13-45
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:132:13-94
+activity#com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:138:9-141:47
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:140:13-51
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:141:13-45
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:139:13-103
+activity#com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:143:9-145:47
+	android:configChanges
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:144:13-51
+	android:theme
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:145:13-45
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:143:19-89
+provider#com.netease.nim.uikit.common.media.picker.model.GenericFileProvider
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:148:9-156:20
+	android:grantUriPermissions
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:152:13-47
+	android:authorities
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:150:13-73
+	android:exported
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:151:13-37
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:149:13-95
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:153:13-155:57
+	android:resource
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:155:17-55
+	android:name
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml:154:17-67
+uses-sdk
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		ADDED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml
+		INJECTED from D:\android\workpace\NewApp\NIM_Android_UIKit-master\AndroidManifest.xml

@@ -1,17 +1,25 @@
 package com.lmq.tool;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Environment;
+import android.view.LayoutInflater;
+import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.example.newapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,6 +45,7 @@ public class LmqTool {
         }
         return null;
     }
+
     public static boolean hasNetWork(Activity activity) {
         Context context = activity.getApplicationContext();
         ConnectivityManager connectivity = (ConnectivityManager) context
@@ -108,5 +117,66 @@ public class LmqTool {
             return true;
         } else
             return false;
+    }
+
+    public static Dialog createCustomDialog(Context context,
+                                            List<DialogItem> items, int style) {
+        LinearLayout dialogView = (LinearLayout) LayoutInflater.from(context)
+                .inflate(R.layout.custom_dialog_layout, null);
+        final Dialog customDialog = new Dialog(context,style);
+        LinearLayout itemView;
+        //ImageView sp;
+        TextView textView;
+
+        for (int i=0;i< items.size();i++) {
+
+            itemView = (LinearLayout) LayoutInflater.from(context).inflate(
+                    items.get(i).getViewId(), null);
+            textView = (TextView) itemView.findViewById(R.id.popup_text);
+            if(items.get(i).getmText().length()>13)
+                textView.setTextSize(12);
+            else
+                textView.setTextSize(18);
+            textView.setText(items.get(i).getmText());
+            textView.setOnClickListener(new OnItemClick(items.get(i), customDialog));
+            dialogView.addView(itemView);
+            if(i<items.size()-1){
+                //添加分隔线
+                ImageView sp=new ImageView(context);
+                sp.setBackgroundResource(R.drawable.custom_dialog_sp);
+                dialogView.addView(sp);
+            }
+        }
+
+        WindowManager.LayoutParams localLayoutParams = customDialog.getWindow().getAttributes();
+        localLayoutParams.x = 0;
+        localLayoutParams.y = -1000;
+        localLayoutParams.gravity = 80;
+        dialogView.setMinimumWidth(10000);
+
+        customDialog.onWindowAttributesChanged(localLayoutParams);
+        customDialog.setCanceledOnTouchOutside(true);
+        customDialog.setCancelable(true);
+        customDialog.setContentView(dialogView);
+
+
+        if (context instanceof Activity) {
+            Activity activity = (Activity) context;
+            if (!activity.isFinishing()) {
+                customDialog.show();
+            }
+        }
+
+        return customDialog;
+    }
+    //多次点击
+    private static long lastClickTime;
+    public synchronized static boolean isFastClick() {
+        long time = System.currentTimeMillis();
+        if ( time - lastClickTime < 1000) {
+            return true;
+        }
+        lastClickTime = time;
+        return false;
     }
 }
