@@ -3,6 +3,7 @@ package com.netease.nim.uikit.common.activity;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,6 +21,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.netease.nim.uikit.R;
 import com.netease.nim.uikit.common.fragment.TFragment;
 import com.netease.nim.uikit.common.util.log.LogUtil;
 import com.netease.nim.uikit.common.util.sys.ReflectionUtil;
@@ -151,6 +153,45 @@ public abstract class UI extends AppCompatActivity {
             TextView e1e=new TextView(this);
             e1e.setText("测试标题2");
             e1e.setTextColor(Color.TRANSPARENT);
+            ly.addView(e1e);
+
+
+            toolbar.addView(ly,p0);
+
+        }
+    }
+
+    public void setTitleAndAdd(CharSequence title,View.OnClickListener addlistener) {
+
+        if (toolbar != null) {
+            //toolbar.setTitle(title);
+            toolbar.setTitleTextColor(Color.WHITE);
+            LinearLayout ly=new LinearLayout(this);
+            ly.setHorizontalGravity(LinearLayout.HORIZONTAL);
+            ViewGroup.LayoutParams p0=new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+            TextView ee=new TextView(this);
+            ee.setText(title);
+            ee.setGravity(Gravity.CENTER);
+            ee.setTextSize(18);
+            ee.setTextColor(Color.WHITE);
+
+
+
+            LinearLayout.LayoutParams topContentTextView_lp=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT,1.0f);//此处我需要均分高度就在heignt处设0,1.0f即设置权重是1，页面还有其他一个控件,1：1高度就均分了
+            ly.addView(ee,topContentTextView_lp);
+            TextView e1e=new TextView(this);
+            e1e.setText("测试2");
+            e1e.setTextColor(Color.TRANSPARENT);
+            e1e.setGravity(Gravity.CENTER);
+            e1e.setPadding(0,0,15,0);
+            Drawable drawable = getResources().getDrawable(R.drawable.add_white);
+            //一定要加这行！！！！！！！！！！！
+            drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+            e1e.setCompoundDrawables(null,null,drawable,null);
+
+            e1e.setTextColor(Color.TRANSPARENT);
+            e1e.setOnClickListener(addlistener);
             ly.addView(e1e);
 
 
