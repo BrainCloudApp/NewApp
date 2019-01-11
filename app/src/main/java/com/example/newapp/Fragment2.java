@@ -17,7 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.lmq.im.team.TeamListActivity;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.netease.nim.uikit.business.contact.core.item.ItemTypes;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -101,6 +103,28 @@ public class Fragment2 extends Fragment {
 //                Intent intent = new Intent(getActivity(), VideoList.class);
 //                startActivity(intent);
                 initVideoContent();
+            }
+        });
+        CardView healthdocument = getActivity().findViewById(R.id.healthdocument);
+        healthdocument.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //健康档案
+            }
+        });
+        CardView daywork = getActivity().findViewById(R.id.daywork);
+        daywork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //每日工作量
+            }
+        });
+        CardView qun = getActivity().findViewById(R.id.qun);
+        qun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //群协作
+                TeamListActivity.start( getActivity(), ItemTypes.TEAMS.NORMAL_TEAM);
             }
         });
     }

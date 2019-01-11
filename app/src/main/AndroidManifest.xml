@@ -104,6 +104,8 @@
         <activity android:name="com.lmq.tool.Url_Web"  />
         <activity android:name="com.lmq.ui.Settings_Message_Activity"  />
         <activity android:name="com.lmq.ui.MessageList_Activity"  />
+        <activity android:name="com.lmq.im.team.TeamListActivity"  />
+        <activity android:name="com.lmq.ui.DoctorChooseList_Activity"  />
 
         <!--网易云信-->
         <!-- APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
