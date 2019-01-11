@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -27,7 +27,7 @@
                 android:textStyle="bold" />
 
         </android.support.v7.widget.Toolbar>
-    </RelativeLayout>
+    </RelativeLayout>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -64,6 +64,13 @@
             android:text="医生"
             android:textColor="#FFF"
             android:textSize="16sp" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:drawableRight="@drawable/settings"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:id="@+id/settings"/>
 
     </RelativeLayout>
 

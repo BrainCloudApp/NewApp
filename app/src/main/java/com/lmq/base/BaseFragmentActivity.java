@@ -4,9 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Looper;
-import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 
 import com.lmq.tool.ToastUtils;
 import com.trello.rxlifecycle2.components.support.RxFragmentActivity;
@@ -77,6 +75,19 @@ public abstract class BaseFragmentActivity extends RxFragmentActivity implements
             e.printStackTrace();
         }
     }
+   /* @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+    @OnClick(R.id.back)
+    public void goback(){
+        finish();
+    }*/
+   /* @BindView(R.id.title)TextView titletxt;
+    public void setTitle(String title){
+        titletxt.setText(title);
+    }*/
     public void showToast(String mes){
 
         ToastUtils.showToast(BaseFragmentActivity.this,mes);
@@ -92,7 +103,7 @@ public abstract class BaseFragmentActivity extends RxFragmentActivity implements
                 pdialog.setMessage(mes);
                 pdialog.setIndeterminate(false);
                 pdialog.setCancelable(true);
-                Window window=pdialog.getWindow();
+                /*Window window=pdialog.getWindow();
                 WindowManager.LayoutParams params = window.getAttributes();
                 //params.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;//触摸显示
                 params.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -106,7 +117,7 @@ public abstract class BaseFragmentActivity extends RxFragmentActivity implements
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE;//始终隐藏，触摸屏幕时也不出现
                 window.setAttributes(params);
-
+*/
 
                 pdialog.show();
                 Looper.loop();

@@ -48,6 +48,8 @@ public class Fragment1 extends Fragment{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         contentList = (ArrayList<Content>) getActivity().getIntent().getSerializableExtra("news");
+        if(contentList==null)
+            contentList=new ArrayList<>();
 //        RecyclerView recyclerView = getActivity().findViewById(R.id.recycler_view_fragment);
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
 //        recyclerView.setLayoutManager(layoutManager);
@@ -62,7 +64,7 @@ public class Fragment1 extends Fragment{
 
 //        getInitContent();
 //        contentList = (ArrayList<Content>) getActivity().getIntent().getSerializableExtra("news");
-        Log.d("FragmentLife", contentList.toString());
+//        Log.d("FragmentLife", contentList.toString());
         RecyclerView recyclerView = getActivity().findViewById(R.id.recycler_view_fragment);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);

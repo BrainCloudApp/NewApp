@@ -15,11 +15,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
+
+import com.bumptech.glide.Glide;
+import com.lmq.ui.RecentMessage_Activity;
+import com.lmq.ui.Settings_Activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +46,7 @@ public class Fragment3 extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+
         String username1 = (String) getArguments().get("input_username");
         String userclass1 = (String) getArguments().get("reg_class");
         Log.d("Fragment3", " ****** " + username1 + "  " + userclass1);
@@ -48,13 +54,21 @@ public class Fragment3 extends Fragment {
         TextView userclass = getActivity().findViewById(R.id.user_class);
         username.setText(username1);
         userclass.setText(userclass1);
+        Button settings=(Button)getActivity().findViewById(R.id.settings);
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent it=new Intent(getActivity(), Settings_Activity.class);
+                startActivity(it);
+            }
+        });
 
-        setHasOptionsMenu(true);
+       /* setHasOptionsMenu(true);
         Toolbar toolbar_my = getActivity().findViewById(R.id.toolbar_my);
         toolbar_my.setTitle("  ");
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar_my);
-
+*/
         initItem();
         ItemAdapter adapter = new ItemAdapter(getContext(), R.layout.my_item, myListItems);
         final ListView listView = getActivity().findViewById(R.id.my_item_list);
@@ -64,6 +78,10 @@ public class Fragment3 extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 MyListItem myListItem = myListItems.get(i);
                 switch (myListItem.getItemName()) {
+                    case "我的消息":
+                        Intent it3=new Intent(getActivity(), RecentMessage_Activity.class);
+                        startActivity(it3);
+                        break;
                     case "报表数据分析":
                         Log.d("Switch",myListItem.getItemName());
                         Intent intent = new Intent(getActivity(),WebView1.class);
@@ -109,8 +127,8 @@ public class Fragment3 extends Fragment {
     }
 
     private void initItem() {
-//        MyListItem item1 = new MyListItem("我的消息", R.drawable.my_info);
-//        myListItems.add(item1);
+        MyListItem item1 = new MyListItem("我的消息", R.drawable.my_remind);
+       myListItems.add(item1);
         MyListItem item2 = new MyListItem("病人治疗信息", R.drawable.my_data);
         myListItems.add(item2);
         MyListItem item3 = new MyListItem("医生工作量信息", R.drawable.my_productivity);

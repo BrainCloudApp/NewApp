@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_gray_alpha40">#66000000</color>
+
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+    <color name="bussiness_card_gridview_bg">#ECF1F5</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+</resources>
