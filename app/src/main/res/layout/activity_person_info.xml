@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonInfo"
+    android:orientation="vertical">
+    <include layout="@layout/activity_titlelinearlayout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/user1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张三"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/zhiwei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27岁"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="病情"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="训练情况"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/linear_practice"
+
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/accessory"
+                    android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="心得分享"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"
+
+                android:id="@+id/linear_share"
+                android:textColor="#000000"
+                android:drawableRight="@drawable/accessory"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="44dp"
+       android:background="@drawable/bt_bottom_nomal"
+       android:text="添    加"
+       android:textColor="#fff"
+       android:textSize="17sp"
+       android:id="@+id/gochat"
+       android:layout_margin="15dp"/>
+</LinearLayout>

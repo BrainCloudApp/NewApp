@@ -218,4 +218,20 @@ public class CommonPresenter extends BasePresenter<CommonView, LifecycleProvider
         new Appservices().deleteHealthinfo_Problem( id_problem, getActivity(), getCommHttpCallback());
 
     }
+    public void addMypatient(String id_pat) {
+
+
+
+
+        new Appservices().addMypatient( id_pat, getActivity(), getCommHttpCallback());
+
+    }
+    public void getMypatient(String id_u) {
+
+
+
+
+        new Appservices().getMypatients( id_u, getActivity(), getCommHttpCallback());
+
+    }
     }

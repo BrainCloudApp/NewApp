@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.example.newapp.R;
 import com.lmq.base.BaseActivity;
+import com.lmq.common.AppContact;
 import com.lmq.common.CommonPresenter;
 import com.lmq.common.CommonView;
 import com.lmq.ui.adapter.DoctorChooseAdapter;
@@ -62,7 +63,9 @@ public class DoctorChooseList_Activity extends BaseActivity implements CommonVie
     @OnClick(R.id.action)
     public void sure(){
         //确定
-        ArrayList<String> surelist=sa.getChooselist();
+      //  ArrayList<String> surelist=sa.getChooselist();
+        ArrayList<String> surelist=new ArrayList<>();
+        surelist.add(AppContact.localImDes);
         if(surelist.size()==0){
             showMes("请最少选择一人！");
             return;

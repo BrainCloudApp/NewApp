@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 
 
 import com.bumptech.glide.Glide;
+import com.lmq.ui.MyPatients;
 import com.lmq.ui.RecentMessage_Activity;
 import com.lmq.ui.Settings_Activity;
 
@@ -82,6 +83,10 @@ public class Fragment3 extends Fragment {
                         Intent it3=new Intent(getActivity(), RecentMessage_Activity.class);
                         startActivity(it3);
                         break;
+                    case "患者通讯录":
+                        Intent it4=new Intent(getActivity(), MyPatients.class);
+                        startActivity(it4);
+                        break;
                     case "报表数据分析":
                         Log.d("Switch",myListItem.getItemName());
                         Intent intent = new Intent(getActivity(),WebView1.class);
@@ -129,6 +134,8 @@ public class Fragment3 extends Fragment {
     private void initItem() {
         MyListItem item1 = new MyListItem("我的消息", R.drawable.my_remind);
        myListItems.add(item1);
+        MyListItem item5 = new MyListItem("患者通讯录", R.drawable.my_record);
+        myListItems.add(item5);
         MyListItem item2 = new MyListItem("病人治疗信息", R.drawable.my_data);
         myListItems.add(item2);
         MyListItem item3 = new MyListItem("医生工作量信息", R.drawable.my_productivity);
