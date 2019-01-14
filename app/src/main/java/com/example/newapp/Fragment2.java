@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.lmq.im.team.TeamListActivity;
+import com.lmq.ui.MyPatientsHealth;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.netease.nim.uikit.business.contact.core.item.ItemTypes;
 
@@ -110,6 +111,8 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View view) {
                 //健康档案
+                Intent it=new Intent(getActivity(), MyPatientsHealth.class);
+                startActivity(it);
             }
         });
         CardView daywork = getActivity().findViewById(R.id.daywork);

@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <!--网易云信-->
 
     <!-- 权限声明 -->
@@ -106,6 +106,18 @@
         <activity android:name="com.lmq.ui.MessageList_Activity"  />
         <activity android:name="com.lmq.im.team.TeamListActivity"  />
         <activity android:name="com.lmq.ui.DoctorChooseList_Activity"  />
+        <activity android:name="com.lmq.ui.MyPatients"  />
+        <activity android:name="com.lmq.ui.Person_Info_Activity"  />
+        <activity android:name="com.lmq.ui.PersonShareList_Activity"  />
+        <activity android:name="com.lmq.ui.PersonList_Activity"  />
+
+        <activity android:name="com.lmq.ui.healthdocument.HealthInfo_Activity"  />
+        <activity android:name="com.lmq.ui.healthdocument.HealthInfo_Base_Edit_Activity"/>
+        <activity android:name="com.lmq.ui.healthdocument.HealthInfo_ProblemHistory_Activity"  />
+        <activity android:name="com.lmq.ui.healthdocument.HealthInfo_ProblemHistory_Item_Activity"  />
+        <activity android:name="com.lmq.ui.healthdocument.HospitalHistory_Activity"  />
+        <activity android:name="com.lmq.ui.healthdocument.HospitalHistory_Item_Activity"  />
+        <activity android:name="com.lmq.ui.MyPatientsHealth"  />
 
         <!--网易云信-->
         <!-- APP key, 可以在这里设置，也可以在 SDKOptions 中提供。

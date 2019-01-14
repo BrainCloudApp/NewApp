@@ -22,6 +22,7 @@ import com.netease.nim.uikit.business.contact.core.provider.ContactDataProvider;
 import com.netease.nim.uikit.business.contact.core.query.IContactDataProvider;
 import com.netease.nim.uikit.business.contact.core.viewholder.ContactHolder;
 import com.netease.nim.uikit.business.contact.core.viewholder.LabelHolder;
+import com.netease.nim.uikit.business.team.helper.TeamHelper;
 import com.netease.nim.uikit.common.ToastHelper;
 import com.netease.nim.uikit.common.activity.ToolBarOptions;
 import com.netease.nim.uikit.common.activity.UI;
@@ -65,7 +66,14 @@ public class TeamListActivity extends UI implements AdapterView.OnItemClickListe
                 //选择联系人
 
                 ArrayList<String> list=( ArrayList<String> )data.getSerializableExtra("info");
+                if(list!=null&&list.size()>0){
 
+                        TeamCreateHelper.createNormalTeam(TeamListActivity.this, list, false, null);
+
+                /* if (ids != null && !ids.isEmpty()) {
+                      TeamCreateHelper.createNormalTeam(TeamL, selected, false, null);
+                }*/
+            }
             }
         }
     }

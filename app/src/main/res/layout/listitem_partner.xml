@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/linear_search">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/graylineconerbg"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_centerVertical="true"
+      >
+
+        <TextView android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text=""
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/ic_search"
+            android:textColor="#ffffff"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:hint="请输入患者姓名搜索"
+            android:textSize="15dip"
+            android:imeOptions="actionSearch"
+            android:textColorHint="#cbcbd1"
+            android:textColor="#cbcbd1"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+
+            android:id="@+id/keyword"/>
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text=""
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/cancle"
+            android:id="@+id/cancle"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="互助聊天室"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/LargeTextSize"
+                android:padding="10dp"
+                android:background="@drawable/grayline_selector"
+                android:id="@+id/chatroomtxt"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear_xinde">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user1" />
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_image"
+                    android:layout_centerHorizontal="true"
+                    android:text="张三"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="今日完成训练情况"
+                    android:gravity="start"
+                    android:textColor="#000"
+                    android:id="@+id/practice_info"
+                    android:visibility="gone"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#fff"
+                    android:id="@+id/linear_share">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/shareinfo"
+
+                    android:gravity="start"
+                    android:text="患者的分享心得的首付款几乎都是空间发挥的刷卡缴费好的伤口就会放框架的说法好的伤口就会放打开手机号发"
+                    android:singleLine="false"
+                    android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/shareimg"
+                        android:src="@drawable/apple"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        >
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/dianzan"
+                            android:text="66"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/dianzancount"
+                            android:textSize="13sp" />-->
+                        <TextView
+                            android:layout_width="38dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:padding="1dp"
+                            android:layout_toLeftOf="@+id/pinglun"
+                            android:text="66"
+                            android:gravity="center_vertical"
+                            android:drawableRight="@drawable/ic_dianzan"
+
+                            android:id="@+id/dianzan"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:text=""
+                            android:drawableLeft="@drawable/ic_pinglun"
+
+                            android:id="@id/pinglun"
+                            android:layout_alignParentRight="true"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="5dp"
+
+                        android:gravity="start"
+                        android:text="患者的分享心得的首付款几乎都是空间发挥的刷卡缴费好的伤口就会放框架的说法好的伤口就会放打开手机号发"
+                        android:singleLine="false"
+                        android:background="#e8eaf6"
+                        android:padding="5dp"
+                        android:lineSpacingMultiplier="1.1"
+
+                        android:id="@+id/pingluninfo"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

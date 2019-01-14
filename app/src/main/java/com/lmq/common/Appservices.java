@@ -36,6 +36,8 @@ public class Appservices {
     private final String HEALTHINFO_DELETE_HOSPITAL= "/app/healthinfo_deletehospital";//删除用户健康档案出入院信息
     private final String HEALTHINFO_EDIT_PROBLEM= "/app/healthinfo_editproblem";//保存用户健康档案病史信息
     private final String HEALTHINFO_DELETE_PROBLEM= "/app/healthinfo_deleteproblem";//删除用户健康档案病史信息
+    private final String MYPATIENTS= "/app/getmypatients";//获取我的患者列表
+    private final String MYPATIENTS_ADD= "/app/addmypatient";//添加到我的患者列表
 
 
 
@@ -448,11 +450,54 @@ public class Appservices {
             callback.onError(1,e.getMessage());
         }
     }
+
+    /**
+     * 删除健康问题
+     * @param id_problem id
+     * @param lifecycle
+     * @param callback
+     */
     public void deleteHealthinfo_Problem(String id_problem,LifecycleProvider lifecycle, HttpCallback callback){
 
         try {
             JSONObject param = new JSONObject();
             param.put("id_problem", id_problem);
+            request(HEALTHINFO_DELETE_PROBLEM,param,lifecycle,callback);
+        }catch (Exception e){
+            e.printStackTrace();
+            callback.onError(1,e.getMessage());
+        }
+    }
+
+    /**
+     *  添加到我的患者通讯录
+     * @param id_pat 患者id
+     * @param lifecycle
+     * @param callback
+     */
+    public void addMypatient(String id_pat,LifecycleProvider lifecycle, HttpCallback callback){
+
+        try {
+            JSONObject param = new JSONObject();
+            param.put("id_pat", id_pat);
+            request(HEALTHINFO_DELETE_PROBLEM,param,lifecycle,callback);
+        }catch (Exception e){
+            e.printStackTrace();
+            callback.onError(1,e.getMessage());
+        }
+    }
+
+    /**
+     * 获取我的患者列表
+     * @param id_u 用户id
+     * @param lifecycle
+     * @param callback
+     */
+    public void getMypatients(String id_u,LifecycleProvider lifecycle, HttpCallback callback){
+
+        try {
+            JSONObject param = new JSONObject();
+            param.put("id_u", id_u);
             request(HEALTHINFO_DELETE_PROBLEM,param,lifecycle,callback);
         }catch (Exception e){
             e.printStackTrace();
